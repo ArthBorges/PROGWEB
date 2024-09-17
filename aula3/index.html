@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aula Table_Form</title>
+</head>
+<body>
+    <header>
+        <h1>Arthur Borges Alexandre</h1>
+        <h2>RGA: 2023.1907.032-7</h2>
+    </header>
+    <section>
+        <h1>Seção de Formulários:</h1>
+        <form>
+            <label for="usuario">Usuário</label><br>
+            <input type="text" id="usuario" name="Usuário"><br>
+            <label for="senha">Senha</label><br>
+            <input type="password" id="senha" name="Senha"><br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+        <form>
+            <label for="imagem">Gif</label><br>
+            <input type="image" src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/5eeea355389655.59822ff824b72.gif" id="imagem" height="400">
+        </form>
+        <form>
+            <label for="vol">Volume</label>
+            <input type="range" id="vol" min="0" max="100">
+        </form>
+        <form>
+            <label for="cpf">Insira seu CPF:</label>
+            <input type="text" id="cpf" placeholder="999.999.999-99" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}">
+        </form>
+        <form>
+            <label for="tempo">Selecione um horário:</label>
+            <input type="time" id="tempo">
+        </form>
+        <form>
+            <label for="email">Insira seu email:</label>
+            <input type="email" id="email">
+        </form>
+        <form>
+            <label for="quantidade">Quantidade(Min 0 - Max 100)</label>
+            <input type="number" id="quantidade" min="0" max="100" step="5">
+        </form>
+    </section>
+    <section>
+        <h1>Seção de Listas:</h1>
+        <h2>(Lista Numerada) Navegadores mais populares no Brasil em 2024:</h2>
+        <ol>
+            <li>Chrome (72,37%)</li>
+            <li>Opera (10,01%)</li>
+            <li>Edge (8,75%)</li>
+            <li>Firefox (5,23%)</li>
+            <li>Safari (1,46%)</li>
+        </ol>
+        <h2>(Lista de Definição) Linguagens de marcação:</h2>
+        <dl>
+            <dt>SGML</dt>
+            <dd>Standard Generalized Markup Language é uma linguagem de marcação padrão, também sendo uma metalinguagem de marcação para definição de outras linguagens de marcação.</dd>
+            <dt>XML</dt>
+            <dd>Extensible Markup Language (Linguagem de Marcação Extensível) é uma de linguagem de marcação derivada da linguagem SGML, utilizada para compartilhamento fácil de informações.</dd>
+            <dt>HTML</dt>
+            <dd>Hypertext Markup Language (Linguagem de Marcação de Hipertexto) é uma de linguagem de marcação derivada da linguagem SGML criada para conteúdos hipertexto.</dd>
+        </dl>
+        <h2>(Lista não-ordenada) Linguagens de programação:</h2>
+        <ul>
+            <li>Python</li>
+            <li>C</li>
+            <li>Java</li>
+            <li>Ruby</li>
+        </ul>
+    </section>
+    <section>
+        <h1>Seção de tabelas</h1>
+        <table>
+            <tr>
+                <th>Categoria</th>
+                <th>Descrição</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+            </tr>
+            <tr>
+                <td rowspan="3">Jogos eletrônicos</td>
+                <td>Mario Party</td>
+                <td>R$ 159,99</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>The Legend of Zelda</td>
+                <td>R$ 350,00</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Castle of Illusion</td>
+                <td>R$ 259,90</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Brinquedo</td>
+                <td>Carrinhos - HotWheels - Pacote com 5 carros</td>
+                <td>R$ 74,99</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Lego Classic - Caixa pequena</td>
+                <td>R$ 199,90</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>R$1.394,66</td>
+                <td>8</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
