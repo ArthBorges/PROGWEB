@@ -1,0 +1,65 @@
+body {
+    font: 15px Times, sans-serif;
+    background-color: #cedade;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "header formacao"
+        "perfil competencias"
+        "perfil experiencia"
+        "footer footer";
+}
+
+header, section, footer, .foto img {
+    border-radius: 40px 40px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #5d6d7e;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+}
+
+header, section, footer {
+    margin: 10px;
+    padding: 20px;
+    display: table;
+}
+
+h1, h2 {
+    font-family: "Sofia";
+    font-style: italic;
+    text-shadow: 2px 2px 2px #d4eff9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #afbbbf;
+    gap: 30px;
+}
+
+section#perfil {
+	grid-area: perfil;
+	background-color: #afbbbf;
+}
+section#competencias {
+	grid-area: competencias;
+	background-color: #afbbbf;
+}
+section#formacao {
+	grid-area: formacao;
+	background-color: #afbbbf;
+}
+section#experiencia {
+	grid-area: experiencia;
+	background-color: #afbbbf;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #afbbbf;
+}
