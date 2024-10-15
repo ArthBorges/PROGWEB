@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="arthur.borges.css">
+    <script type="text/javascript" src="arthur.borges.js"></script>
+    <title>Forms & JS</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Formulário</h1>
+    </header>
+    <section>
+        <form class="cadastro">
+            <label for="rga">RGA:</label>
+            <span id="rgaErro">Preencha corretamente o RGA!</span>
+            <input type="text" id="rga" placeholder="9999.9999.999-9" pattern="[0-9]{4}.[0-9]{4}.[0-9]{3}-[0-9]{1}" onfocusout="validaRga()" required>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome">
+            <label for="senha">Defina uma senha:</label>
+            <input type="password" id="senha">
+            <span id="senhaErro">As duas senhas não são compatíveis.</span>
+            <label for="conf_senha">Confirme a senha:</label>
+            <input type="password" id="conf_senha" onfocusout="validaSenha()" required>
+            <fieldset>
+                <legend>Tipo de permissão:</legend>
+                <input type="radio" id="estudante" name="tipo" value="Estudante">
+                <label for="est">Estudante</label>
+                <input type="radio" id="monitor" name="tipo" value="Monitor">
+                <label for="mon">Monitor</label>
+                <input type="radio" id="ouvinte" name="tipo" nvalue="Ouvinte">
+                <label for="ouv">Ouvinte</label>
+            </fieldset>
+            <label for="data">Data de início das atividades:</label>
+            <span id="dataErro">Data inválida!</span>
+            <input type="date" id="dataIni">
+            <input type="submit" id="enviar">
+        </form>
+    </section>
+</body>
+</html>
