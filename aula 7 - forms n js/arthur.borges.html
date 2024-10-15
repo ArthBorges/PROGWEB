@@ -34,7 +34,7 @@
             </fieldset>
             <label for="data">Data de início das atividades:</label>
             <span id="dataErro">Data inválida!</span>
-            <input type="date" id="dataIni">
+            <input type="date" id="dataIni" onfocusout="validaData()" required>
             <input type="submit" id="enviar">
         </form>
     </section>

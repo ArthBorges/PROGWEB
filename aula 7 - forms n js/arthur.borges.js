@@ -47,11 +47,11 @@ function validaData() {
 
     var data = new Date(dataIni.value + " 00:00:00");
     
-    if (data <= hoje) {
+    if (data < hoje) {
         dataIni.focus();
         mensagem.style.display = "block";
     }else{
-        botao.focus();
         mensagem.style.display = "none";
+        botao.focus();
     }
 }
